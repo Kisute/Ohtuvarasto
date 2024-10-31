@@ -1,3 +1,0 @@
-Muuta ainakin kahden tiedoston sisältöä ja committaa muutokset repositorioon 2
-
-muutoksia 1
