@@ -14,7 +14,7 @@ class TestVarasto(unittest.TestCase):
         self.varasto = Varasto(10)
 
     def test_konstruktori_luo_tyhjan_varaston(self):
-        """Testataan että konstruktori tekee tyhjän"""
+            """Testataan että konstruktori tekee tyhjän"""
         self.assertAlmostEqual(self.varasto.saldo, 0)
 
     def test_uudella_varastolla_oikea_tilavuus(self):
@@ -24,7 +24,7 @@ class TestVarasto(unittest.TestCase):
     def test_negatiivinen_tilavuus(self):
         """Testataan että negatiivista asetettaessa tilavuus menee nollaan"""
         varasto = Varasto(-5)
-        self.assertAlmostEqual(varasto.tilavuus, 0)
+        self.assertAlmostEqual(varasto.tilavuus, 0)                       # "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa                   a"           
 
     def test_negatiivinen_alkusaldo(self):
         """Testataan että negatiivinen alku arvon saldo on 0"""
