@@ -18,7 +18,7 @@ disable=raw-checker-failed,
 
 [FORMAT]
         max-line-length = 80
-        expected-line-ending-format = CRLF
+        expected-line-ending-format = LF
         indent-after-paren=4
 
 [REFACTORING]
