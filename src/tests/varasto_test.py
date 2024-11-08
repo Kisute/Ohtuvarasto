@@ -2,7 +2,6 @@
 Unit testit varasto luokalle.
 """
 
-
 import unittest
 from varasto import Varasto
 
@@ -11,7 +10,7 @@ class TestVarasto(unittest.TestCase):
     """Testit luokalle"""
 
     def setUp(self):
-        """Alustetaan 10:llä"""
+        """Alustetaan 10:llä"""  
         self.varasto = Varasto(10)
 
     def test_konstruktori_luo_tyhjan_varaston(self):
@@ -53,7 +52,6 @@ class TestVarasto(unittest.TestCase):
         self.varasto.lisaa_varastoon(11)
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 0)
 
-
     def test_ottaminen_palauttaa_oikean_maaran(self):
         """Testataan että ottaminen palauttaa oikean verran"""
         self.varasto.lisaa_varastoon(8)
@@ -72,7 +70,6 @@ class TestVarasto(unittest.TestCase):
         saatu_maara = self.varasto.ota_varastosta(8)
         self.assertAlmostEqual(saatu_maara, 6)
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 10)
-
 
     def test_ottaminen_lisaa_tilaa(self):
         """Testataan että ottaminen lisää tilaa"""
